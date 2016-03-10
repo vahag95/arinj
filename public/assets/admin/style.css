@@ -1,0 +1,13 @@
+.member_edit_header{
+	margin-bottom: 50px;
+}
+
+.member{
+	padding:20px 5px;
+	border:1px solid #ececec;
+	border-radius: 10px;
+	margin:10px 0;
+}
+#page-wrapper{
+	min-height: 630px;
+}
