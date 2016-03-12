@@ -26,7 +26,6 @@ Route::controllers([
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'HomeController@index');
     Route::controller('/about', 'AboutController');
@@ -34,5 +33,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::controller('/teachers', 'TeachersController');
     Route::get('/contact', function(){
     	return view('contact');
+    });
+    Route::get('test', function(){
+    	$amazon = new AmazonApi();
+    	dd( $amazon->store('asd', 'images/landing.jpg')->get('ObjectURL') );
     });
 });

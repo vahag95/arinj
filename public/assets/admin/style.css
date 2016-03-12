@@ -11,3 +11,15 @@
 #page-wrapper{
 	min-height: 630px;
 }
+.changes.count{
+	margin-bottom: 20px;
+}
+.title-one{
+	display: inline-block;
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+}

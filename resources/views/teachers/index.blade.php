@@ -12,7 +12,7 @@
 				@foreach($teachers as $teacher)
 					<div class="col-sm-6 col-md-3">
 						<div class="single-member">
-							<img src="/images/members/{{ $teacher->image }}" alt="team member" width="200" height="200" />
+							<img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $teacher->image }}" alt="team member" width="200" height="200" />
 							<h4>{!! $teacher->first_name !!} {!! $teacher->last_name !!}</h4>
 							<b>{!! Lang::get("roles.".$teacher->role) !!}</b>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>

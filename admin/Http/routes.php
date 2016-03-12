@@ -24,3 +24,7 @@ Route::resource('/members', 'MembersController');
 Route::resource('/teachers', 'TeachersController');
 
 Route::post('/images/upload', 'ImagesController@upload');
+
+Route::get('/about/school/{type}', 'AboutController@showSchool');
+
+Route::post('/about/school/{type}', 'AboutController@updateSchool');

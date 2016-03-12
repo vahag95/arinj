@@ -8,7 +8,12 @@
 				</div>
 			</div>
 			<div class="row">
-				
+				<div class="col-md-6">
+					<img width="400" src="/images/landing.jpg" alt="">
+				</div>
+				<div class="col-md-6">
+					{!! Lang::get("schools.".$type) !!} դպրոցում մենք ունենք 150 ասակերտ					
+				</div>
 			</div>
 		</div>
 	</section><!--/#Our-Team-->

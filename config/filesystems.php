@@ -55,11 +55,11 @@ return [
         ],
 
         's3' => [
-            'driver' => 's3',
-            'key' => 'your-key',
-            'secret' => 'your-secret',
-            'region' => 'your-region',
-            'bucket' => 'your-bucket',
+            'driver'   => 's3',
+            'key'    => env('AWS_KEY', "AKIAJWB2ZRF7LYJIWRZA"),
+            'secret' => env('AWS_SECRET', 'xGTqMOXuEmqO7M34YwIchMZ1iVWy8NA4W+8Tl0mB'),
+            'bucket' => env('AWS_BUCKET', 'arinj'),
+            'region'   => 'us-west-2',            
         ],
 
     ],

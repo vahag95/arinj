@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Services\MembersService;
 use App\Services\TeacherService;
+use App\Http\AmazonApi;
 
 class MembersController extends Controller
 {
@@ -16,12 +17,13 @@ class MembersController extends Controller
      *
      * @return void
      */
-    public function __construct(MembersService $memberService, TeacherService $teacherService)
+    public function __construct(MembersService $memberService, AmazonApi $amazonApi,TeacherService $teacherService)
     {
         $this->middleware('auth');
         app()->setLocale('arm');
         $this->memberService = $memberService;
         $this->teacherService = $teacherService;
+        $this->amazonApi = $amazonApi;
     }
 
     /**
@@ -48,7 +50,10 @@ class MembersController extends Controller
             $extension = $request->image->getClientOriginalExtension(); // getting image extension
             $fileName = rand(11111,99999).'.'.$extension; // renameing image
             $request->image->move($destinationPath, $fileName);            
-            $this->memberService->update($id, ['image' => $fileName]);        
+            $this->amazonApi->delete($request->old_image_url);
+            $name = $this->amazonApi->store('members/'.$fileName, $destinationPath.'/'.$fileName)->get('ObjectURL');
+            $this->memberService->update($id, ['image' => 'members/'.$fileName]);            
+            \File::delete($destinationPath.'/'.$fileName);      
         }
         return redirect()->back()->with('success', 'Փոփոխությունները կատարված են');
     }

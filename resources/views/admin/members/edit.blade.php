@@ -2,65 +2,6 @@
 @section('title')
     Ադմին
 @stop
-@section('sidebar')
-    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->    
-    <ul class="nav navbar-nav side-nav">
-        <li class="active">            
-            <a href="javascript:;" data-toggle="collapse" data-target="#we"><i class="fa fa-fw fa-user"></i>Մենք <i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="we" class="collapse in">
-                <li>
-                    <a href="/members">Անձնակազմ</a>
-                </li>
-                <li>
-                    <a href="/teachers">Ուսուցիչներ</a>
-                </li>                
-            </ul>
-        </li>        
-        <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#achievements"><i class="fa fa-fw fa-bar-chart-o"></i>Մեր նվաճումները <i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="achievements" class="collapse">
-                <li>
-                    <a href="#">Բուհ․ Ընդունելություններ %</a>
-                </li>
-                <li>
-                    <a href="#">Օլիմպիադաներ</a>
-                </li>                
-            </ul>
-        </li>
-        <li>
-            <a href="javascript:;" data-toggle="collapse" data-target="#life_at_school"><i class="fa fa-fw fa-arrows-v"></i> Կյանքը դպրոցում <i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="life_at_school" class="collapse">
-                <li>
-                    <a href="#">Հայտարարություններ</a>
-                </li>
-                <li>
-                    <a href="#">Միջոցառումներ</a>
-                </li>
-                <li>
-                    <a href="#">Շրջայցեր</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-        </li>
-        <li>
-            <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-        </li>
-        <li>
-            <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-        </li>
-        <li>
-            <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-        </li>    
-        <li>
-            <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-        </li>
-        <li>
-            <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-        </li>
-    </ul>	
-@stop
 @section('content')	
     @include('alerts.messages')
     <div class="col-md-12 member_edit_header">
@@ -81,7 +22,8 @@
                 {{ Lang::get("roles.$member->role") }}
             </div>
             <div class="form-group">
-                <label>Նկար</label>                
+                <label>Նկար</label>  
+                {!! Form::hidden('old_image_url', $member->image) !!}
                 @if( !isset( $member->image ) || $member->image == "" )                       
                     <div class="member_photo" style="display: none;">
                         <img src="" width="200" height="200" id="avatar">
@@ -89,7 +31,7 @@
                     {!! Form::file('image', ['class' => 'form-control', 'id' => 'image', 'accept' => 'image/jpeg,image/png,image/gif']) !!}                
                 @else
                     <div class="member_photo">
-                        <img src="/images/members/{{ $member->image }}" width="200" height="200" id="avatar">
+                        <img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $member->image }}" width="200" height="200" id="avatar">
                     </div>
                     {!! Form::file('image', ['style' => 'display:none', 'class' => 'form-control', 'id' => 'image', 'accept' => 'image/jpeg,image/png,image/gif']) !!}
                     <a id="change_image" href="javascript:;">փոփոխել նկարը</a>

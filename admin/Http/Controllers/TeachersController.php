@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Services\TeacherService;
 use App\Services\SubjectService;
+use App\Http\AmazonApi;
 
 class TeachersController extends Controller
 {
@@ -16,11 +17,12 @@ class TeachersController extends Controller
      *
      * @return void
      */
-    public function __construct(TeacherService $teacherService, SubjectService $subjectsService)
+    public function __construct(TeacherService $teacherService, AmazonApi $amazonApi, SubjectService $subjectsService)
     {
         $this->middleware('auth');        
         $this->teacherService = $teacherService;
         $this->subjectsService = $subjectsService;
+        $this->amazonApi = $amazonApi;
     }
 
     /**
@@ -48,7 +50,9 @@ class TeachersController extends Controller
             $extension = $request->image->getClientOriginalExtension(); // getting image extension
             $fileName = rand(11111,99999).'.'.$extension; // renameing image
             $request->image->move($destinationPath, $fileName);            
-            $inputs['image'] = $fileName;
+            $name = $this->amazonApi->store('teachers/'.$fileName, $destinationPath.'/'.$fileName)->get('ObjectURL');          
+            \File::delete($destinationPath.'/'.$fileName);        
+            $inputs['image'] = "teachers/$fileName";            
         }
         if( null!== $teacher = $this->teacherService->create( $inputs ) ){
             return redirect("/teachers/$teacher->id/edit");
@@ -68,8 +72,12 @@ class TeachersController extends Controller
             $destinationPath = 'images/teachers'; // upload path
             $extension = $request->image->getClientOriginalExtension(); // getting image extension
             $fileName = rand(11111,99999).'.'.$extension; // renameing image
-            $request->image->move($destinationPath, $fileName);            
-            $inputs['image'] = $fileName;
+            $request->image->move($destinationPath, $fileName);
+            if(isset($request->old_image_url) && $request->old_image_url !== "")
+                $this->amazonApi->delete($request->old_image_url);           
+            $name = $this->amazonApi->store('teachers/'.$fileName, $destinationPath.'/'.$fileName)->get('ObjectURL');          
+            \File::delete($destinationPath.'/'.$fileName);
+            $inputs['image'] = "teachers/$fileName";
         }        
         if(null!== $this->teacherService->update($id, $inputs) ){
             return redirect()->back()->with('success', 'asdasdad');
