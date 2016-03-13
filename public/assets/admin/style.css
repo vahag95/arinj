@@ -23,3 +23,9 @@
 	text-transform: uppercase;
 	position: relative;
 }
+ul.collapse li.active{
+	background: #000;
+}
+.single_image{
+	margin-top: 20px;
+}

@@ -10,6 +10,8 @@
 	</div>
 	<hr>
 	@foreach($teachers as $teacher)
-		@include('admin.teachers.parts.item')
+		<div class="member">
+			@include('admin.teachers.parts.item')
+		</div>
 	@endforeach
 </div>

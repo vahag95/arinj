@@ -28,3 +28,7 @@ Route::post('/images/upload', 'ImagesController@upload');
 Route::get('/about/school/{type}', 'AboutController@showSchool');
 
 Route::post('/about/school/{type}', 'AboutController@updateSchool');
+
+Route::resource('announcements', 'AnnouncementsController');
+
+Route::resource('events', 'EventsController');
