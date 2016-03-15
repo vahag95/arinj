@@ -1,45 +1,43 @@
 @extends('layouts.layout')
 @section('content')
-	<section id="home">
-		<div class="home-pattern"></div>
-		<div id="main-carousel" class="carousel slide" data-ride="carousel"> 
-			<ol class="carousel-indicators">
-				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#main-carousel" data-slide-to="1"></li>
-				<li data-target="#main-carousel" data-slide-to="2"></li>
-			</ol><!--/.carousel-indicators--> 
-			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(/himu/images/slider/slide3.jpg)"> 
-					<div class="carousel-caption"> 
-						<div> 
-							<h2 class="heading animated bounceInDown">Մեր առօրյան</h2> 
-							<p class="animated bounceInUp">Fully Professional one page template</p> 
-							<a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
-						</div> 
-					</div> 
-				</div>
-				<div class="item" style="background-image: url(/himu/images/slider/slide2.jpg)"> 
-					<div class="carousel-caption"> 
-						<div> 
-							<h2 class="heading animated bounceInDown">Get All in Onepage</h2> 
-							<p class="animated bounceInUp">Everything is outstanding </p> <a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
-						</div> 
-					</div> 
-				</div> 
-				<div class="item" style="background-image: url(/himu/images/slider/slide1.jpg)"> 
-					<div class="carousel-caption"> 
-						<div> 
-							<h2 class="heading animated bounceInRight">Fully Responsive Template</h2> 
-							<p class="animated bounceInLeft">100% Responsive HTML template</p> 
-							<a class="btn btn-default slider-btn animated bounceInUp" href="#">Get Started</a> 
-						</div> 
-					</div> 
-				</div>
-			</div><!--/.carousel-inner-->
-
-			<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-			<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-		</div> 
-
-	</section><!--/#home-->
+	<section>
+	<div class="container">
+		<div class="text-center">
+			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+				<h2 class="title-one">Դպրոցի պատմությունը</h2>
+				<img src="/images/landing.jpg" style="width:100%; margin-bottom: 30px;" alt="">
+				<p style="text-align: left;font-size: 16px;">
+					&nbsp;&nbsp;&nbsp;Առինջի միջնակարգ դպրոցն ունի երկար տարիների պատմություն։
+					Առաջին անգամ այն հիմնադրվել է Հայաստանում սովետական կարգերի
+					հաստատվելուց հետո, երբ խնդիր եր դրվել վերացնել անգրագիտությունը։
+					Դա եղել է 1920-1922 - ական թվականներին։
+					Գյուղի Սուրբ Հովհաննես եկեղեցու մոտ եղել է մի հարկանի շինություն
+					2 սենյակով, որտեղ և ակումբն էր, և խրճիթ֊ընթերցարանը։
+					Վերջինս հիմնել էր Լևոն Մանվելյանը, Մանվելյանը խրճիթի դռան վրա մի 
+					ցուցանակ էր կպցրել, վրան գրելով՝ « Ով կարդա, նա մարդա »։
+					Այդտեղ տառաճանաչ էին դառնում ոչ միայն երեխաները, այլ նաև մեծահասակները։
+					Թե քանի տարի է այդ կրթօջախը գործել անհայտ է, բայց շինությունը մինչև 
+					1948-1950 ֊ ական թվականները դեռ գոյություն ուներ։
+					Դրանից հետո դպրոցի ետնամասում կառուցվում է 4 դասասենյակով մի փոքր դպրոց
+					տարրական դասարանների համար։
+					Այդ սենյակներից մեկի կեսը հատկացված էր բեմին և տախտակե շարժուն միջնորմով
+					բաժանվում էր դասասենյակից։ Գյուղում և դպրոցում կազմակերպված միջոցառումների 
+					ժամանակ բեմը բացվում էր և դասասենյակը վերածվում էր դահլիճի։
+					Դա կառուցված էր երևի 1928-1930 ֊ ական թվականներին։
+					1944 թվականին դպրոցը յոթամյա էր։ Մինչև VII դասարան սովորում էին այդ դպրոցում, որից
+					հետո արդեն VIII - X դասարանները սովորում էին Քանաքեռի Խ․Աբովյանի անվան միջնակարգ
+					դպրոցում և ամեն օր դպրոց գնում էին ոտքով։
+					Դպրոցում գործում էր բազմաթիվ խմբակներ, պիոներական և կոմերիտական կազմակերպություններ։
+					<br>&nbsp;&nbsp;&nbsp;1956-1957 թվականներին սկսեցին կառուցել դպրոցի նոր շենքը, որն ութամյա էր։
+					Դպրոցի նորակառույց շենքը պատրաստ եղավ 1963-1964 ուստարում և դարձավ ութամյա։
+					Աշակերտների թիվը շատացավ, դասարաններինը նույնպես։ 1970 թվականին դպրոցը դարձավ միջնակարգ,
+					1971 թվականին տվեց իր առաջին շրջանավարտները և առ այսօր տվել է 44-րդ շրջանավարտները։
+					<br>&nbsp;&nbsp;&nbsp;1976 թվականին կառուցվեց դպրոցի 3-րդ մասնաշենքը։
+					2001 թվականին դպրոցը վերանորոգվեց, կահավորվեց Գագիկ Ծառուկյանի հովանավորությամբ և 
+					անվանվեց Կոլյա Ծառուկյանի միջնակարգ դպրոց։
+				</p>
+			</div>
+		</div>
+	</div>
+	</section>
 @stop

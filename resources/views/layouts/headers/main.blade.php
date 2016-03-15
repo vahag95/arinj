@@ -56,7 +56,8 @@
 						    <li class="divider"></li>
 						    <li><a tabindex="-1" href="/members/librarian">Գրադարանավար</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/members/nurse">Բուժքույր</a></li>						    						   
+						    <!--<li><a tabindex="-1" href="/members/nurse">Բուժքույր</a></li>-->
+						    <li><a tabindex="-1" href="/members/soldier">Զինղեկ</a></li>
 						    <li class="divider"></li>
 						    <li><a tabindex="-1" href="/members/accountant">Հաշվապահ</a></li>						    						   
 						    <li class="divider"></li>
@@ -86,7 +87,7 @@
 						</ul>
 					</li>
 					<li class="dropdown @if(Request::is('/life*')) active @endif">
-						<a href="javascript:void(0)">Ուսւմնական</a>
+						<a href="javascript:void(0)">Ուսումնական</a>
 						<ul class="dropdown-menu">
 						    <li><a tabindex="-1" href="/">Դասավանդման մոտեցումներ</a></li>
 						    <li class="divider"></li>

@@ -19,4 +19,5 @@ return [
     'accountant'          => 'հաշվապահ',
     'librarian'           => 'գրադարանավար',
     'nurse'               => 'բուժքույր',
+    'soldier'             => 'զինղեկ'
 ];

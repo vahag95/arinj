@@ -14,17 +14,12 @@
 					@for($i =0 ; $i<4; $i++)
 						<div class="col-sm-6 col-md-3">
 							<div class="single-member">
-								<img src="/images/members/{{ $members[$i]->image }}" alt="team member" width="200" height="200" />
-								<h4>{!! $members[$i]->first_name !!} {!! $members[$i]->last_name !!}</h4>
-								<b>{!! Lang::get("roles.".$members[$i]->role) !!}</b>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-								<div class="socials">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
+								<img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $members[$i]->image }}" alt="team member" width="200" height="200" />
+								<div class="member_name" style="height:65px">
+									<h4>{!! $members[$i]->first_name !!} {!! $members[$i]->last_name !!}</h4>
+									<span style="font-size: 10px">{!! $members[$i]->description !!}</span>
 								</div>
+								<b>{!! Lang::get("roles.".$members[$i]->role) !!}</b>								
 							</div>
 						</div>
 					@endfor
@@ -33,17 +28,11 @@
 					@for($i = 4; $i < count( $members ) ; $i++)
 						<div class="col-sm-6 col-md-3">
 							<div class="single-member">
-								<img src="/images/members/{{ $members[$i]->image }}" alt="team member" width="200" height="200" />
-								<h4>{!! $members[$i]->first_name !!} {!! $members[$i]->last_name !!}</h4>
-								<b>{!! Lang::get("roles.".$members[$i]->role) !!}</b>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-								<div class="socials">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
+								<img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $members[$i]->image }}" alt="team member" width="200" height="200" />
+								<div class="member_name" style="height:65px">
+									<h4>{!! $members[$i]->first_name !!} {!! $members[$i]->last_name !!}</h4>									
 								</div>
+								<b>{!! Lang::get("roles.".$members[$i]->role) !!}</b>								
 							</div>
 						</div>
 					@endfor

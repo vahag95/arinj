@@ -1,14 +1,17 @@
 <section id="about-us">
 	<div class="container">
 		<div class="text-center">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
 				<h2 class="title-one">Մենք</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				<p>
+					Կրթօջախը, պատկերավոր ասած, պիտի նմանվի մեղվանոցի, ուր ամեն մի մեղու ունի իր որոշակի դերն ու պարտականությունը, որոշակի աշխատանքը, ուր բոլորեքյան ուժով հեռաստաններից բերված ծաղկափոշին հունցվում ու վերածվում է նկարչագեղ պատկեր ունեցող մեղրահացի։
+					Ճիշտ այդպես՝ կրթօջախի հնոցում պիտի եփվի, աճի ու ձևավորվի հասունացող սերունդը՝ ստանալով մեղրահացի բույր ու անուշություն, մարդկային սքանչելի ու առինքնող հատկանիշներ, առողջ ու բանական գաղափարներ, շրջագծված գիտելիքների, կարողությունների ու հմտությունների մի ամբողջ համալիր։
+				</p>
 			</div>
 		</div>
 		<div class="about-us">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-md-10 col-md-offset-1">
 					<h3></h3>
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-chain-broken"></i> Մեր Մասին</a></li>
@@ -18,17 +21,21 @@
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="about">
 							<div class="media">
-								<img class="pull-left media-object" src="/himu/images/about-us/about.jpg" alt="about us"> 
+								<img class="pull-left media-object" src="/images/about.jpg" height="300" alt="about us"> 
 								<div class="media-body">
-									<p>դպրոցի պատմությունը</p>
+									<p>Կրթօջախը, պատկերավոր ասած, պիտի նմանվի մեղվանոցի, ուր ամեն մի մեղու ունի իր որոշակի դերն ու պարտականությունը, որոշակի աշխատանքը, ուր բոլորեքյան ուժով հեռաստաններից բերված ծաղկափոշին հունցվում ու վերածվում է նկարչագեղ պատկեր ունեցող մեղրահացի։
+									   Ճիշտ այդպես՝ կրթօջախի հնոցում պիտի եփվի, աճի ու ձևավորվի հասունացող սերունդը՝ ստանալով մեղրահացի բույր ու անուշություն, մարդկային սքանչելի ու առինքնող հատկանիշներ, առողջ ու բանական գաղափարներ, շրջագծված գիտելիքների, կարողությունների ու հմտությունների մի ամբողջ համալիր։
+								   </p>
 								</div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="mission">
 							<div class="media">
-								<img class="pull-left media-object" src="/himu/images/about-us/mission.jpg" alt="Mission"> 
+								<img class="pull-left media-object" src="/images/mission.jpg" height="300" alt="Mission"> 
 								<div class="media-body">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
+									<p style="font-size: 22px">
+										Մեր գործն է՝ սովորել ու սովորել, ձգտել, կուտակել հնարավորին չափ գիտելիքներ, որովհետև հասարակական լուրջ հոսանքներն այնտեղ են, որտեղ գիտելիքներն են, և ապագա մարդկության երձանկությունը միայն գիտելիքներում է։
+									</p>
 								</div>
 							</div>
 						</div>
@@ -41,38 +48,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<h3>Our Skills</h3>
-					<div class="skill-bar">
-						<div class="skillbar clearfix " data-percent="90%">
-							<div class="skillbar-title">
-								<span>HTML5 &amp; CSS3</span>
-							</div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">90%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix" data-percent="85%">
-							<div class="skillbar-title"><span>UI Design</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">85%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="70%">
-							<div class="skillbar-title"><span>jQuery</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">70%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="60%">
-							<div class="skillbar-title"><span>PHP</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">60%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="75%">
-							<div class="skillbar-title"><span>Wordpress</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">75%</div>
-						</div> <!-- End Skill Bar --></div>
-					</div>
+				</div>				
 			</div>
 		</div>
 	</div>
