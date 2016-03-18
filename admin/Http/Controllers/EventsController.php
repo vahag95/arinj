@@ -25,10 +25,10 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index( EventService $eventService)
+    public function index( EventService $eventService )
     {        
-        // $announcements = $eventsService->getAllAnnouncements();
-        // return view('admin.events.index', ['events' => $events]);
+        $events = $eventService->getAllEvents();
+        return view('admin.events.index', ['events' => $events]);
     }
 
     public function create()
@@ -36,9 +36,12 @@ class EventsController extends Controller
         return view('admin.events.create');
     }
 
-    public function store( Request $request )
+    public function store( EventService $eventService, Request $request )
     {
-        dd( $request->all() );
+        if(null!== $eventService->create($request->all())){
+            return redirect('/events')->with('success', 'Հաջողությամբ ավելացված է');
+        }
+        return redirect()->back()->withError('Ինչ որ բան այն չէ, խնդրում ենք կրկին փորձեք');
         // if(null!== $announcement = $eventservice->create($request->all())){
         //     return redirect('/events/'.$announcement->id.'/edit')->with('success', 'Հայտարարությունը հաջողությամբ ավելացված է');
         // }
@@ -48,5 +51,13 @@ class EventsController extends Controller
     {
         // $announcement = $eventservice->getAnnouncementById( $id );
         // return view('admin.events.edit', ['announcement' => $announcement]);
+    }
+
+    public function destroy($id, eventservice $eventservice)
+    {
+        if($eventservice->delete($id)){
+            return redirect()->back()->with('success', 'Հաջողությամբ ջնջված է');
+        }
+        return redirect()->back()->withError('Ինչ որ բան այն չէ, խնդրում ենք կրկին փորձեք');
     }
 }

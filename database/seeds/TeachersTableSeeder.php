@@ -10,91 +10,60 @@ class TeachersTableSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        
+    {        
         $teacher = [
-            'first_name' => 'dasatu1',
-            'last_name' => 'dasatu1yan',                    
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'dasatu2',
-            'last_name' => 'Tnorenyan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'dasatu2',
-            'last_name' => 'Tnorenyan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'dasatu3',
-            'last_name' => 'bujquyryan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'dasatu4',
-            'last_name' => 'Ավանեսյան',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
         DB::table('teachers')->insert($teacher);
 
         $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
+            'first_name' => 'Անուն',
+            'last_name' => 'Ազգանուն',            
         ];
-        DB::table('teachers')->insert($teacher);
-
-        $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
-        ];
-        DB::table('teachers')->insert($teacher);
-
-        $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
-        ];
-        DB::table('teachers')->insert($teacher);
-
-        $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
-        ];
-        DB::table('teachers')->insert($teacher);
-
-        $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
-        ];
-        DB::table('teachers')->insert($teacher);
-
-        $teacher = [
-            'first_name' => 'gradaranavar',
-            'last_name' => 'gradaranavaryan',            
-        ];
-        DB::table('teachers')->insert($teacher);
+        DB::table('teachers')->insert($teacher);        
                 
     }
 }

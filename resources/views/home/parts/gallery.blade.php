@@ -2,8 +2,7 @@
 	<div class="container">
 		<div class="row text-center">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">Պատկերասրահ</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+				<h2 class="title-one">Պատկերասրահ</h2>				
 			</div>
 		</div>
 		<ul class="portfolio-filter text-center">

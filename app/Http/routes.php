@@ -31,11 +31,15 @@ Route::group(['middleware' => ['web']], function () {
     Route::controller('/about', 'AboutController');
     Route::controller('/members', 'MembersController');
     Route::controller('/teachers', 'TeachersController');
+    Route::controller('/tours', 'ToursController');
     Route::get('/contact', function(){
     	return view('contact');
     });
-    Route::get('test', function(){
-    	$amazon = new AmazonApi();
-    	dd( $amazon->store('asd', 'images/landing.jpg')->get('ObjectURL') );
+    Route::resource('/events', 'EventsController');
+
+    Route::resource('/announcements', 'AnnouncementsController');
+
+    Route::get('/community/supporters',function(){
+        return view('community.supporters');
     });
 });

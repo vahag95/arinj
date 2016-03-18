@@ -300,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index:1;
 	left:0;
 	bottom:0;
-	background-image:url(../images/home-pattern.png);
+	background-image:url(/himu/images/home-pattern.png);
 	background-repeat:repeat;
 	opacity:0.2;
 }
@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #services {
-  background-image: url("../images/services/service-bg.jpg");
+  background-image: url("/images/home_page_schools_bg.jpg");
   color:#fff;
   text-align:center;
   background-color:	#0A0A13;
@@ -633,12 +633,12 @@ h1, h2, h3, h4, h5, h6 {
 .single-service i {
 	text-align:center;
 	font-size:80px;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	border-radius: 50%;
 	display: inline-block;
 	height: 150px;
-	line-height: 150px;
-	width: 150px;
+	line-height: 250px;
+	width: 250px;
 	color:#43484E;
 	transition: all 0.9s ease 0s;
 	-moz-transition: all 0.9s ease 0s;
@@ -937,7 +937,7 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #clients{
-	background-image: url("../images/clients/client-bg.jpg");
+	background-image: url("/himu/images/clients/client-bg.jpg");
 	background-color:#0A0A13;
 }
 
@@ -1179,7 +1179,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index:1;
 	left:0;
 	bottom:0;
-	background-image:url(../images/pattern.png);
+	background-image:url(/himu/images/pattern.png);
 	background-repeat:repeat;
 	opacity:0.2;
 }

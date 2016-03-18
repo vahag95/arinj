@@ -17,7 +17,8 @@ class CreateMembersTable extends Migration
             $table->enum('role', [ 'accountant', 'director', 'deputy_director', 'librarian', 'nurse', 'soldier']);
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('description');
+            $table->string('father_name');
+            $table->longText('description');
             $table->string('image');            
             $table->timestamps();
         });

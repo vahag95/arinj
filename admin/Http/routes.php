@@ -32,3 +32,5 @@ Route::post('/about/school/{type}', 'AboutController@updateSchool');
 Route::resource('announcements', 'AnnouncementsController');
 
 Route::resource('events', 'EventsController');
+
+Route::resource('tours', 'ToursController');

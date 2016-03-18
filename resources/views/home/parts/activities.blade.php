@@ -2,8 +2,7 @@
 	<div class="container">
 		<div class="row text-center clearfix">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">Մեր Առօրյան</h2>
-				<p class="blog-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				<h2 class="title-one">Մեր Առօրյան</h2>			
 			</div>
 		</div> 
 		<div class="row">

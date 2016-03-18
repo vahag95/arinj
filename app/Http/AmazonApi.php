@@ -91,9 +91,8 @@ class AmazonApi
 	 *
 	 * 
 	 */
-	public function uploadDirectory($key)
-	{
-		$dir = public_path().'/app';
+	public function uploadDirectory($dir, $key)
+	{		
 		$bucket = $this->bucket;
 		$key_prefix = $key;
 		$options = 

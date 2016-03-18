@@ -17,11 +17,28 @@
 			<div class="pattern"></div>
 			<div class="row text-center clearfix">
 				<div class="col-sm-6">
-					<div class="contact-address"><address><p><span>Devs</span>Cluster</p><strong>36 North Kafrul<br>Dhaka Cantonment Area<br> Dhaka-1206, Bangladesh</strong><br><small>( Lorem ipsum dolor sit amet, consectetuer adipiscing elit )</small></address>
+					<div class="contact-address">
+						<address>
+							<p style="font-size: 15px">
+								<span style="font-size: 15px">Առինջի Կ․Ծառուկյանի անվան</span><br>
+								միջնակարգ դպրոց
+							</p>
+							<strong>ՀՀ Կոտայքի մարզ գ․Առինջ<br>
+								Մաշտոցի 66
+							</strong><br><br>
+							<strong>
+							հեռ․<br>
+								(010) 62-04-80<br>
+								(055) 21-20-08
+							</strong><br>
+							<strong>
+							Էլ․փոստ<br>
+								arinj@schools.am									
+							</strong>								
+						</address>
 						<div class="social-icons">
-							<a href="https://www.facebook.com/%D4%B1%D5%BC%D5%AB%D5%B6%D5%BB%D5%AB-%D4%BF%D4%BE%D5%A1%D5%BC%D5%B8%D6%82%D5%AF%D5%B5%D5%A1%D5%B6%D5%AB-%D5%A1%D5%B6%D5%BE%D5%A1%D5%B6-%D5%B4%D5%AB%D5%BB%D5%B6%D5%A1%D5%AF%D5%A1%D6%80%D5%A3-%D5%A4%D5%BA%D6%80%D5%B8%D6%81-1589416494626145"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
+							Գտեք մեզ նաև <b>facebook.com</b> ֊ում
+							<a target="_blank" href="https://www.facebook.com/%D4%B1%D5%BC%D5%AB%D5%B6%D5%BB%D5%AB-%D4%BF%D4%BE%D5%A1%D5%BC%D5%B8%D6%82%D5%AF%D5%B5%D5%A1%D5%B6%D5%AB-%D5%A1%D5%B6%D5%BE%D5%A1%D5%B6-%D5%B4%D5%AB%D5%BB%D5%B6%D5%A1%D5%AF%D5%A1%D6%80%D5%A3-%D5%A4%D5%BA%D6%80%D5%B8%D6%81-1589416494626145/?fref=ts"><i class="fa fa-facebook"></i></a>
 						</div>
 					</div>
 				</div>

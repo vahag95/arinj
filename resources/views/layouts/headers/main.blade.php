@@ -71,18 +71,18 @@
 						    <li class="divider"></li>
 						    <li><a tabindex="-1" href="/achivements/olimp">Օլիմպիադաներ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/members/librarian">Մրցույթներ</a></li>
+						    <li><a tabindex="-1" href="/achivements">Մրցույթներ</a></li>
 						    <li class="divider"></li>						   
 						</ul>
 					</li>
 					<li class="dropdown @if(Request::is('/life*')) active @endif">
 						<a href="javascript:void(0)">Կյանքը դպրոցում</a>
 						<ul class="dropdown-menu">
-						    <li><a tabindex="-1" href="/life/anouncements">Հայտարարութհուններ</a></li>
+						    <li><a tabindex="-1" href="/announcements">Հայտարարութհուններ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/life/activities">Միջոցառումներ</a></li>
+						    <li><a tabindex="-1" href="/events">Միջոցառումներ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/life/walkthrough">Շրջայցեր</a></li>
+						    <li><a tabindex="-1" href="/tours">Շրջայցեր</a></li>
 						    <li class="divider"></li>						   
 						</ul>
 					</li>

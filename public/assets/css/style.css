@@ -77,3 +77,30 @@
 .member{
     margin-bottom: 20px;
 }
+
+.single_event_title h2{
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 75%;
+    height: 250px; /* Fallback for non-webkit */
+    margin: 0 auto;       
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcement{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.announcement .title{
+    margin-bottom: 20px;
+}
+#contact{
+    padding-bottom:50px !important;
+}
+.contact-details{
+    padding-top: 0 !important; 
+}
