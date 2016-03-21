@@ -38,7 +38,7 @@
 				<ul class="nav navbar-nav navbar-right">					
 					<li class="@if(Request::is('/')) active @endif"><a href="/">Գլխավոր</a></li> 
 					<li class="dropdown @if(Request::is('about*')) active @endif">
-						<a href="/about">Մեր մասին</a>
+						<a href="javascript:void(0)">Մեր մասին</a>
 						<ul class="dropdown-menu">
 						    <li><a tabindex="-1" href="/about/history">Դպրոցի պատմությունը</a></li>
 						    <li class="divider"></li>
@@ -54,14 +54,17 @@
 						    <li class="divider"></li>
 						    <li><a tabindex="-1" href="/members/deputy-directors">Փոխտնօրեններ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/members/librarian">Գրադարանավար</a></li>
-						    <li class="divider"></li>
-						    <!--<li><a tabindex="-1" href="/members/nurse">Բուժքույր</a></li>-->
+						    <li><a tabindex="-1" href="/members/accountant">Հաշվապահ</a></li>						    
+						    <li class="divider"></li>						    
 						    <li><a tabindex="-1" href="/members/soldier">Զինղեկ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/members/accountant">Հաշվապահ</a></li>						    						   
+						   	<li><a tabindex="-1" href="/members/librarian">Գրադարանավար</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/teachers">Ուս․ կազմ</a></li>						    
+						    <li><a tabindex="-1" href="/members/operator">Համ. օպերատոր</a></li>
+						    <li class="divider"></li>
+						    <li><a tabindex="-1" href="/members/nurse">Բուժքույր</a></li>
+						    <li class="divider"></li>
+						    <li><a tabindex="-1" href="/teachers">Ուսուցիչներ</a></li>						    
 						</ul>
 					</li>
 					<li class="dropdown @if(Request::is('achivements*')) active @endif">
@@ -89,11 +92,11 @@
 					<li class="dropdown @if(Request::is('/life*')) active @endif">
 						<a href="javascript:void(0)">Ուսումնական</a>
 						<ul class="dropdown-menu">
-						    <li><a tabindex="-1" href="/">Դասավանդման մոտեցումներ</a></li>
+						    <li><a tabindex="-1" href="/teaching-approach">Դասավանդման մոտեցումներ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/life/activities">Մեթոդական զեկուցումներ</a></li>
+						    <li><a tabindex="-1" href="/teaching-report">Մեթոդական զեկուցումներ</a></li>
 						    <li class="divider"></li>
-						    <li><a tabindex="-1" href="/life/walkthrough">Աշակերտական նախագծեր</a></li>
+						    <li><a tabindex="-1" href="/teaching-projects">Աշակերտական նախագծեր</a></li>
 						    <li class="divider"></li>						   
 						</ul>
 					</li>				

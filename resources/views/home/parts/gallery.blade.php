@@ -9,163 +9,71 @@
 			<li><a class="btn btn-default active" href="#" data-filter="*">Բոլորը</a></li>
 			<li><a class="btn btn-default" href="#" data-filter=".event">Միջոցառումներ</a></li>
 			<li><a class="btn btn-default" href="#" data-filter=".walk">Շրջայցեր</a></li>			
-		</ul><!--/#portfolio-filter-->
-		<div class="portfolio-items">
+		</ul><!--/#portfolio-filter-->		
+		<div class="portfolio-items hover15 column">
+			<div class="col-sm-3 col-xs-12 portfolio-item all">
+				<div class="">
+					<div class="portfolio-image">
+						<figure><img src="/images/landing2.jpg" width="100%" height="225" /></figure>						
+					</div>					
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12 portfolio-item walk">
+				<div class="">
+					<div class="portfolio-image">
+						<figure><img src="/images/mission.jpg" width="100%" height="225" /></figure>						
+					</div>					
+				</div>
+			</div>
 			<div class="col-sm-3 col-xs-12 portfolio-item event">
-				<div class="view efffect">
+				<div class="">
 					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/1.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
+						<figure><img src="/images/gallery/dancing_event.jpg" width="100%" height="225" /></figure>						
+					</div>					
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12 portfolio-item event">
+				<div class="">
+					<div class="portfolio-image">
+						<figure><img src="/images/gallery/galler-item.jpg" width="100%" height="225" /></figure>						
+					</div>					
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="view efffect" >
+				<div class="">
 					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/2.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
+						<figure><img src="/images/gallery/gallery-item2.jpg" width="100%" height="225" /></figure>						
+					</div>					
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12 portfolio-item event">
+				<div class="">
+					<div class="portfolio-image">
+						<figure><img src="/images/gallery/gallery-item6.jpg" width="100%" height="225" /></figure>						
+					</div>					
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="view efffect">
+				<div class="">
 					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/3.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
+						<figure><img src="/images/gallery/gallery-item3.jpg" width="100%" height="225" /></figure>						
+					</div>					
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12 portfolio-item event">
+				<div class="">
+					<div class="portfolio-image">
+						<figure><img src="/images/gallery/gallery-item5.jpg" width="100%" height="225" /></figure>						
+					</div>					
 				</div>
 			</div>
 			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="view efffect">
+				<div class="">
 					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/4.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
+						<figure><img src="/images/gallery/gallery-item4.jpg" width="100%" height="225" /></figure>						
+					</div>					
 				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item html">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/5.jpg" alt="">
-					</div> <div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="/himu/images/portfolio/6.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item html">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="/himu/images/portfolio/7.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="/himu/images/portfolio/8.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-3 col-xs-12 portfolio-item event">
-			<div class="view efffect">
-				<div class="portfolio-image">
-					<img src="/himu/images/portfolio/9.jpg" alt="">
-				</div> 
-				<div class="mask text-center">
-					<h3>Novel</h3>
-					<h4>Lorem ipsum dolor sit amet consectetur</h4>
-					<a href="#"><i class="fa fa-link"></i></a>
-					<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-				</div>
-			</div>
-		</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/10.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/11.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item megento">
-				<div class="view efffect">
-					<div class="portfolio-image">
-						<img src="/himu/images/portfolio/12.jpg" alt="">
-					</div> 
-					<div class="mask text-center">
-						<h3>Novel</h3>
-						<h4>Lorem ipsum dolor sit amet consectetur</h4>
-						<a href="#"><i class="fa fa-link"></i></a>
-						<a href="/himu/images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-					</div>
-				</div>
-			</div>
+			</div>			
 		</div>
 	</div> 
 </section> <!--/#portfolio-->

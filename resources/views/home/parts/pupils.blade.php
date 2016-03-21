@@ -12,9 +12,9 @@
 					<div class="services row">
 						<div class="col-sm-4">
 							<div class="single-service">
-								<div style="min-height:250px">
+								<div style="min-height:270px">
 									<i class="">
-										<img src="/images/home_page_elementary.jpg" width="250" alt="">
+										<img src="/images/schools/elementary.jpg" width="200" height="250" alt="">
 									</i>									
 								</div>
 								
@@ -26,14 +26,22 @@
 						</div>
 						<div class="col-sm-4">
 							<div class="single-service">
-								<i class="" style="font-size: 20px;color:#FC7700">100 աշակերտ</i>
+								<div style="min-height:270px">
+									<i class="" style="font-size: 20px;color:#FC7700">
+										<img src="/images/schools/middle.jpg" width="200" height="250" alt="">
+									</i>									
+								</div>
 								<h2>Միջին</h2>
 								<p>Երեխան բնության ամենանվիրական հրաշքն է,բնության մեծագույն պարգևն աշխարհում:</p>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="single-service">
-								<i class="fa fa-users"></i>
+								<div style="min-height:270px">
+									<i class="">
+										<img src="/images/schools/high.jpg" width="200" height="250" alt="">
+									</i>									
+								</div>
 								<h2>Ավագ</h2>
 								<p>Սովորողին պետք է դիտել որպես վաղվա քաղաքացու, նրա հոգին հարկավոր է պտղավորել զգույշ, ուշադիր սիրով։</p>
 							</div>

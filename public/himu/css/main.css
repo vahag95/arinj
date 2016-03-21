@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #services {
-  background-image: url("/images/home_page_schools_bg.jpg");
+  background-image: url("/images/schools/elementary/elementary2.jpg");
   color:#fff;
   text-align:center;
   background-color:	#0A0A13;
@@ -879,14 +879,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .efffect .mask {
-	background-color: #F6F6F6;
+	
     border:4px solid #333333;
 	-webkit-transition: all 0.5s linear 0s;
 	-moz-transition: all 0.5s linear 0s;
 	-ms-transition: all 0.5s linear 0s;
 	-o-transition: all 0.5s linear 0s;
 	transition: all 0.5s linear 0s;
-	opacity: 0
+	opacity: 0.8
 }
 
 .view .mask, .view .content {

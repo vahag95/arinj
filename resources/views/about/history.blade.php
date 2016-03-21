@@ -5,8 +5,8 @@
 		<div class="text-center">
 			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
 				<h2 class="title-one">Դպրոցի պատմությունը</h2>
-				<img src="/images/landing.jpg" style="width:100%; margin-bottom: 30px;" alt="">
-				<p style="text-align: left;font-size: 16px;">
+				<img src="/images/landing.jpg" align="left" style="margin-right:10px;border:2px solid #fc7700;width:50%; margin-bottom: 30px;" alt="">
+				<p style="text-align: justify;font-style: italic  ;font-size: 16px;">
 					&nbsp;&nbsp;&nbsp;Առինջի միջնակարգ դպրոցն ունի երկար տարիների պատմություն։
 					Առաջին անգամ այն հիմնադրվել է Հայաստանում սովետական կարգերի
 					հաստատվելուց հետո, երբ խնդիր եր դրվել վերացնել անգրագիտությունը։

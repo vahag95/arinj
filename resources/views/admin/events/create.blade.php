@@ -16,7 +16,7 @@
                 </div>
                 <div class="form-group">
                     <label>Նկարագրություն</label>
-                    {!! Form::text('descrition', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('description', null, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group images">
                     <input type="file" name="images[]" class="image_select" multiple>                                            

@@ -86,4 +86,10 @@ class MembersController extends Controller
         $members = $this->memberService->getMembersWithRole( 'soldier' );
         return view('members.show', ['members' => $members, 'role' => 'soldier']);
     }
+
+    public function getOperator()
+    {
+        $members = $this->memberService->getMembersWithRole( 'operator' );
+        return view('members.show', ['members' => $members, 'role' => 'operator']);
+    }
 }

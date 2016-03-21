@@ -9,24 +9,30 @@
 				<li data-target="#main-carousel" data-slide-to="2"></li>
 			</ol><!--/.carousel-indicators--> 
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(/images/landing.jpg);"> 
+				<div class="item active" style="background-image: url(/images/landing_new.jpg);"> 
 					<div class="carousel-caption"> 
 						<div> 							
-							<h2 style="color:#fc7700" class="animated bounceInLeft">Դպրոցը հայոց պետականության վերակերտման ու ստեղծագործման հրաշագործ բանալին է</h2>							
+							<h2 style="color:#fc7700" class="animated bounceInLeft">
+								<!-- Դպրոցը հայոց պետականության վերակերտման ու ստեղծագործման հրաշագործ բանալին է -->
+							</h2>
 						</div> 
 					</div> 
 				</div>
 				<div class="item" style="background-image: url(/images/landing2.jpg);top:70px"> 
 					<div class="carousel-caption"> 
 						<div> 							
-							<h2 class="animated bounceInUp">Դպրոցի՛ց եվ դպրոցո՛վ պիտի հոսի հայոց հոգեմտավոր ներուժի կենարար հեղուկը</h2>
+							<h2 class="animated bounceInUp">
+								<!-- Դպրոցի՛ց եվ դպրոցո՛վ պիտի հոսի հայոց հոգեմտավոր ներուժի կենարար հեղուկը -->
+							</h2>
 						</div> 
 					</div> 
 				</div> 
-				<div class="item" style="background-image: url(/himu/images/slider/slide1.jpg)"> 
+				<div class="item" style="background-image: url(/images/new_landing.jpg);top:70px"> 
 					<div class="carousel-caption"> 
 						<div> 
-							<h2 class="heading animated bounceInRight">Առինջի Կ․ Ծառուկյանի անվան միջնակարգ դպրոց</h2>							
+							<h2 class="heading animated bounceInRight">
+								<!-- Առինջի Կ․ Ծառուկյանի անվան միջնակարգ դպրոց -->
+							</h2>
 						</div> 
 					</div> 
 				</div>

@@ -33,6 +33,7 @@ class EventsController extends Controller
     public function show($id, EventService $eventService)
     {
     	$event = $eventService->getEventById($id);
-    	return view('events.show', ['event' => $event]);
+        $image_urls = $event->images()->lists('image_url')->toArray();
+    	return view('events.show', ['event' => $event, 'image_urls' => $image_urls]);
     }
 }

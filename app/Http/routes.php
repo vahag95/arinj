@@ -42,4 +42,13 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/community/supporters',function(){
         return view('community.supporters');
     });
+    Route::get('/teaching-approach', function(){
+        return view('teaching.approach');
+    });
+    Route::get('/teaching-report', function(){
+        return view('teaching.report');
+    });
+    Route::get('/teaching-projects', function(){
+        return view('teaching.projects');
+    });
 });
