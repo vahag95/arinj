@@ -51,4 +51,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/teaching-projects', function(){
         return view('teaching.projects');
     });
+    Route::resource('/open-lessons', 'OpenLessonsController');
+    
+    Route::resource('/achivements', 'AchivementsController');
 });

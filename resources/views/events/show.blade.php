@@ -84,9 +84,11 @@
 		<div class="container">
 			<div class="row text-center clearfix">
 				<div class="single_event_title col-sm-8 col-sm-offset-2">
-					<h2 class="title-one">{{ $event->title }}</h2>
+					<h2 class="title-one">{{ $event->title }}</h2>					
+				</div>
+				<div class="col-md-10 col-md-offset-1">
 					@if(isset($event->description))
-						<h2>{{ $event->description }}</h2>
+						<h4 style="text-align: justify;">{{ $event->description }}</h4>
 					@endif
 				</div>
 			</div> 

@@ -5,12 +5,12 @@
             <li class="@if(Request::is('member*')) active @endif">
                 <a href="/members">Անձնակազմ</a>
             </li>
-            <li class="@if(Request::is('teacher*')) active @endif">
+            <!--<li class="@if(Request::is('teacher*')) active @endif">
                 <a href="/teachers">Ուսուցիչներ</a>
-            </li>                
+            </li>-->                
         </ul>
     </li>
-    <li class="@if(Request::is('abou*')) active @endif"">
+    <!--<li class="@if(Request::is('abou*')) active @endif"">
         <a href="javascript:;" data-toggle="collapse" data-target="#about"><i class="fa fa-fw fa-bar-chart-o"></i>Մեր մասին <i class="fa fa-fw fa-caret-down"></i></a>
         <ul id="about" class="collapse @if(Request::is('abou*')) in @endif">
             <li class="@if(Request::is('about/school/elementary')) active @endif">
@@ -23,15 +23,18 @@
                 <a href="/about/school/high">Ավագ</a>
             </li>                
         </ul>
-    </li>        
-    <li class="">
+    </li>-->        
+    <li class="@if(Request::is('achievement*')) active @endif"">
         <a href="javascript:;" data-toggle="collapse" data-target="#achievements"><i class="fa fa-fw fa-bar-chart-o"></i>Մեր նվաճումները <i class="fa fa-fw fa-caret-down"></i></a>
-        <ul id="achievements" class="collapse class="@if(Request::is('achievement*')) in @endif">
-            <li>
-                <a href="#">Բուհ․ Ընդունելություններ %</a>
+        <ul id="achievements" class="collapse @if(Request::is('achievement*')) in @endif">
+            <li class="@if(Request::is('achievements/universit*') || Request::is('achievements/edit-university')) active @endif">
+                <a href="/achievements/university">Բուհ․ Ընդունելություններ</a>
             </li>
-            <li>
-                <a href="#">Օլիմպիադաներ</a>
+            <li class="@if(Request::is('achievements/olim*') || Request::is('achievements/edit-olimp')) active @endif">
+                <a href="/achievements/olimp">Օլիմպիադաներ</a>
+            </li>
+            <li class="@if(Request::is('achievements/competitio*') || Request::is('achievements/edit-competition')) active @endif">
+                <a href="/achievements/competition">Մրցույթներ</a>
             </li>                
         </ul>
     </li>
@@ -47,24 +50,9 @@
             <li class="@if(Request::is('tour*')) active @endif">
                 <a href="/tours">Շրջայցեր</a>
             </li>
+            <li class="@if(Request::is('open-lesso*')) active @endif">
+                <a href="/open-lessons">Բաց Դասեր</a>
+            </li>
         </ul>
-    </li>
-    <li>
-        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-    </li>
-    <li>
-        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-    </li>
-    <li>
-        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-    </li>
-    <li>
-        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
     </li>    
-    <li>
-        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-    </li>
-    <li>
-        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-    </li>
 </ul>

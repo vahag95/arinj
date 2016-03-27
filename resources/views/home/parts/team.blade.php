@@ -13,10 +13,14 @@
 					@for($i =0 ; $i<4; $i++)
 						<div class="col-sm-6 col-md-3">
 							<div class="single-member">
-								<img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $members[$i]->image }}" alt="team member" width="200" height="200" />
+								<img src="https://s3-us-west-2.amazonaws.com/arinj/{{ $members[$i]->image }}" alt="team member" width="200" height="230" />
 								<div class="member_name" style="height:65px">
 									<h4>{!! $members[$i]->first_name !!} {!! $members[$i]->last_name !!}</h4>
-									<span style="font-size: 10px">{!! $members[$i]->description !!}</span>
+									@if($members[$i]->first_name == "Նելլի")
+										<span style="font-size: 10px">Ուսումնական աշխատանոների գծով</span>										
+									@elseif($members[$i]->first_name == "Գայանե")
+										<span style="font-size: 10px">Մասնագիտ․ կրթ․ աջակց․ գծով</span>										
+									@endif
 								</div>
 								<b>{!! Lang::get("roles.".$members[$i]->role) !!}</b>								
 							</div>

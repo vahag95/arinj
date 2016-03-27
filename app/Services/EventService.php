@@ -25,6 +25,11 @@ class EventService {
 		return $this->event->find( $id );
 	}	
 
+	public function getLastSix()
+	{
+		return $this->event->orderBy('created_at', 'desc')->take(6)->get();
+	}
+
 	public function update($id, $inputs)
 	{		
 		return $this->event->find($id)->update($inputs);

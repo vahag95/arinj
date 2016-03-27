@@ -1,4 +1,7 @@
 @extends('layouts.layout')
+@section('title')
+	Առինջի Կ․Ծառուկյանի անվան միջնակարգ դպրոց
+@stop
 @section('content')
 	<section id="home">
 		<div class="home-pattern"></div>
@@ -7,9 +10,11 @@
 				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
 				<li data-target="#main-carousel" data-slide-to="1"></li>
 				<li data-target="#main-carousel" data-slide-to="2"></li>
+				<li data-target="#main-carousel" data-slide-to="3"></li>
+				<li data-target="#main-carousel" data-slide-to="4"></li>
 			</ol><!--/.carousel-indicators--> 
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(/images/landing_new.jpg);"> 
+				<div class="item active" style="background-image: url(/images/landing_old.jpg);"> 
 					<div class="carousel-caption"> 
 						<div> 							
 							<h2 style="color:#fc7700" class="animated bounceInLeft">
@@ -18,7 +23,7 @@
 						</div> 
 					</div> 
 				</div>
-				<div class="item" style="background-image: url(/images/landing2.jpg);top:70px"> 
+				<div class="item" style="background-image: url(/images/landing2.jpg);top:68px"> 
 					<div class="carousel-caption"> 
 						<div> 							
 							<h2 class="animated bounceInUp">
@@ -27,7 +32,25 @@
 						</div> 
 					</div> 
 				</div> 
-				<div class="item" style="background-image: url(/images/new_landing.jpg);top:70px"> 
+				<div class="item" style="background-image: url(/images/new_landing.jpg);top:68px"> 
+					<div class="carousel-caption"> 
+						<div> 
+							<h2 class="heading animated bounceInRight">
+								<!-- Առինջի Կ․ Ծառուկյանի անվան միջնակարգ դպրոց -->
+							</h2>
+						</div> 
+					</div> 
+				</div>
+				<div class="item" style="background-image: url(/images/high.jpg);top:68px"> 
+					<div class="carousel-caption"> 
+						<div> 
+							<h2 class="heading animated bounceInRight">
+								<!-- Առինջի Կ․ Ծառուկյանի անվան միջնակարգ դպրոց -->
+							</h2>
+						</div> 
+					</div> 
+				</div>
+				<div class="item" style="background-image: url(/images/high3.jpg);top:68px"> 
 					<div class="carousel-caption"> 
 						<div> 
 							<h2 class="heading animated bounceInRight">
@@ -38,7 +61,7 @@
 				</div>
 			</div><!--/.carousel-inner-->
 
-			<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+			<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev">	<i class="fa fa-angle-left"></i></a>
 			<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 		</div> 
 

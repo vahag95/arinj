@@ -1,9 +1,17 @@
-@extends('layouts.admin.layout')
-@section('title')
-    Լոգին
-@stop
-@section('content')
-    <div class="col-md-4 col-md-offset-3">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Մուտք</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    
+</body>
+</html>
+    <div style="margin-top: 200px" class="col-md-4 col-md-offset-4">
         <div class="login-panel panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Մուտքագրեք ձեր տվյալները</h3>
@@ -29,4 +37,3 @@
             </div>
         </div>
     </div>
-@stop

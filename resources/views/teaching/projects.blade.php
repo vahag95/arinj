@@ -18,7 +18,7 @@
 					<div class="col-md-4" style="text-align:left;font-size: 20px">
 						<p>Աշակերտական նախագծերը կազմվում և քննարկվում են աշակերտական խորհրդի՝<<Արմենների>> կողմից և ունեն հետևյալ նպատակները.</p><br>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12 row">
 						<div style="text-align: left" class="col-md-7">
 							<b>1.Նպաստել՝</b><br>
 

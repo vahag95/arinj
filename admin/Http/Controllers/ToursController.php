@@ -22,7 +22,7 @@ class ToursController extends Controller
 
     public function index(TourService $tourService)
     {
-        $tours = $tourService->getAllTours();
+        $tours = $tourService->getAllTours();        
         return view('admin.tours.index', ['tours' => $tours]);
     }
 
@@ -33,8 +33,9 @@ class ToursController extends Controller
 
     public function store(Request $request, TourService $tourService)
     {
-        $tourService->create($request->all());
-        return ;
+        if(null!== $tourService->create($request->all())){
+            return redirect('tours')->with('success', 'Հաջողությամբ ավելացված է');
+        }    
     }
 
     public function destroy($id, TourService $tourService)

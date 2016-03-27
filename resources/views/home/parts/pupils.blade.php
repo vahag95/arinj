@@ -3,7 +3,7 @@
 		<div class="row text-center">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h2 class="title-one">Աշակերտներ</h2>
-				<p>Սովորելով կերտենք մեր ապագան</p>
+				<h3>Սովորելով կերտենք մեր ապագան</h3>
 			</div>
 		</div>
 		<div class="row">

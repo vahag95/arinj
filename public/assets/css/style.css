@@ -3,6 +3,7 @@
 }
 .single-member{
     margin-bottom: 20px;
+    height: 370px !important;
 }
 .dropdown:hover{
 	background: #fc7700;
@@ -113,9 +114,7 @@
 .single-service{
     min-height: 520px;
 }
-figure {
-    cursor: zoom-in;
-    width: 300px;
+figure {    
     height: 200px;
     margin: 0;
     padding: 0;
@@ -173,4 +172,7 @@ figure:hover+span {
         height: 200%;
         opacity: 0;
     }
+}
+.school_page_image{
+    cursor: zoom-in;
 }

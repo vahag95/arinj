@@ -23,7 +23,11 @@ class ToursController extends Controller
     public function getIndex(TourService $tourService)    
     {
         $tours = $tourService->getAllTours();
-        return view('tours.index', ['tours' => $tours]);
+        $image_urls = [];
+        foreach ($tours as $tour) {
+            $image_urls = array_merge($image_urls, $tour->images()->lists('image_url')->toArray());
+        }        
+        return view('tours.index', ['image_urls' => $image_urls]);
     }
 
     /**

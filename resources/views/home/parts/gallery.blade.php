@@ -8,72 +8,63 @@
 		<ul class="portfolio-filter text-center">
 			<li><a class="btn btn-default active" href="#" data-filter="*">Բոլորը</a></li>
 			<li><a class="btn btn-default" href="#" data-filter=".event">Միջոցառումներ</a></li>
-			<li><a class="btn btn-default" href="#" data-filter=".walk">Շրջայցեր</a></li>			
-		</ul><!--/#portfolio-filter-->		
+			<li><a class="btn btn-default" href="#" data-filter=".tour">Շրջայցեր</a></li>			
+		</ul><!--/#portfolio-filter-->
 		<div class="portfolio-items hover15 column">
-			<div class="col-sm-3 col-xs-12 portfolio-item all">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/landing2.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/mission.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item event">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/dancing_event.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item event">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/galler-item.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/gallery-item2.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item event">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/gallery-item6.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/gallery-item3.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item event">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/gallery-item5.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12 portfolio-item walk">
-				<div class="">
-					<div class="portfolio-image">
-						<figure><img src="/images/gallery/gallery-item4.jpg" width="100%" height="225" /></figure>						
-					</div>					
-				</div>
-			</div>			
+			@for($i = 0; $i<3; $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item all">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_open_lessons[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor
+			@for($i = 0; $i<3; $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item event">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_events[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor
+			@for($i = 0; $i<3; $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item tour">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_tours[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor
+			@for($i = 3; $i < count($gallery_events); $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item event">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_events[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor
+			@for($i = 3; $i<count($gallery_tours); $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item tour">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_tours[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor
+			@for($i = 3; $i<count($gallery_open_lessons); $i++)
+				<div class="col-sm-3 col-xs-12 portfolio-item all">
+					<div class="">
+						<div class="portfolio-image">
+							<figure><img src="https://s3-us-west-2.amazonaws.com/arinj{{ $gallery_open_lessons[$i] }}" width="100%" height="225" /></figure>						
+						</div>					
+					</div>
+				</div>				
+			@endfor					
 		</div>
 	</div> 
 </section> <!--/#portfolio-->

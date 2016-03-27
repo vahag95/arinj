@@ -33,4 +33,8 @@ Route::resource('announcements', 'AnnouncementsController');
 
 Route::resource('events', 'EventsController');
 
+Route::resource('open-lessons', 'OpenLessonsController');
+
 Route::resource('tours', 'ToursController');
+
+Route::controller('achievements', 'AchievementsController');

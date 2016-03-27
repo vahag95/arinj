@@ -30,32 +30,33 @@ class TourService {
 		return $this->tour->find($id)->update($inputs);
 	}
 
+	public function getLastTwo()
+	{
+		return $this->tour->orderBy('created_at', 'desc')->take(2)->get();
+	}
+
 	public function create($inputs)
-	{	    
-	    if($inputs['images'][0] !== null){
-	    	$files = [];
-	    	$folder_name = str_random(8);
-	    	$inputs['images_folder'] = $folder_name;
-	    	if(\File::makeDirectory('images/tmp/'.$folder_name)){
-		    	foreach ($inputs['images'] as $image) {
-		    		$extension = $image->getClientOriginalExtension();
-		    		$fileName = rand(11111,99999).'.'.$extension;
-		    		$files[] = $fileName;
-		   			$image->move('images/tmp/'.$folder_name, $fileName);
-		    	}	    	
-		    	$this->amazonApi->uploadDirectory(public_path().'/images/tmp/'.$folder_name, '/tours/'.$folder_name);
-				if(\File::deleteDirectory('images/tmp/'.$folder_name)){
-					if(null!== $tour = $this->tour->create($inputs)){
-						foreach($files as $file){
-							$this->tourImage->create(['tour_id' => $tour->id, 'image_url' => '/tours/'.$folder_name.'/'.$file]);							
-						}						
-					}
-				}
-	    	}
-	    }else{
-	    	$tour = $this->tour->create($inputs);
-	    }
-	    return $tour;
+	{	    	    	    
+        if($inputs['images'][0] !== null){
+        	$files = [];	    	    
+        	foreach ($inputs['images'] as $image) {
+        		$destinationPath = 'tmp';
+        		$extension = $image->getClientOriginalExtension();
+        		$fileName = rand(11111,99999).'.'.$extension;
+        		$files[] = $fileName;
+        		$image->move($destinationPath, $fileName);
+        		$this->amazonApi->store('tours/'.$fileName, $destinationPath.'/'.$fileName);
+        		\File::delete($destinationPath.'/'.$fileName);
+        	}		    	
+    		if(null!== $tour = $this->tour->create($inputs)){
+    			foreach($files as $file){
+    				$this->tourImage->create(['tour_id' => $tour->id, 'image_url' => '/tours/'.$file]);
+    			}						
+    		}					    
+        }else{
+        	$tour = $this->tour->create($inputs);
+        }
+        return $tour;
 	}
 
 	public function delete($id)

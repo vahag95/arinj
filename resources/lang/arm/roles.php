@@ -16,7 +16,7 @@ return [
     'director'            => 'տնօրեն',
     'deputy_director'     => 'փոխտնօրեն',
     'deputy_directors'    => 'փոխտնօրեններ',
-    'accountant'          => 'հաշվապահ',
+    'accountant'          => 'գլխ․ հաշվապահ',
     'librarian'           => 'գրադարանավար',
     'nurse'               => 'բուժքույր',
     'soldier'             => 'զինղեկ',
